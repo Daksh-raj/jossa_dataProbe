@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{%block content%}
+<div id="overview" class="container">
+  <h1>Welcome to JOSSA Data Analysis</h1>
+  <p>
+    Explore and analyze data related to the Joint Seat Allocation Authority
+    (JOSSA) for seat allocation in Indian Institutes of Technology (IITs),
+    National Institutes of Technology (NITs), and other participating
+    institutes.
+  </p>
+</div>
+<div class="container-parent">
+  <img src="" id="image-container" />
+</div>
+<script>
+  let variable = document.getElementById("image-container");
+  console.log(variable);
+  let index = 0;
+  function myContainer() {
+    console.log("function called");
+    if (index == 0) {
+      variable.src =
+        "https://st.adda247.com/https://adda247jobs-wp-assets-adda247.s3.ap-south-1.amazonaws.com/jobs/wp-content/uploads/sites/2/2021/10/14104942/jee-advanced-counseling.jpeg";
+      index = (index + 1) % 2;
+    } else {
+      variable.src =
+        "https://d20x1nptavktw0.cloudfront.net/wordpress_media/2023/05/JOSAA.jpg";
+      index = (index + 1) % 2;
+    }
+  }
+  setInterval(myContainer, 1500);
+</script>
+{%endblock content%}

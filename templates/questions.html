@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body{
+        background-color:#ADD8E6;
+      }
+      h2 {
+        font-style: italic;
+      }
+      .answer {
+        display: none;
+      }
+      .parent-container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+      }
+      .parent-container h1{
+        margin-bottom:50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="parent-container">
+      <h1>
+        Below Are Some Most Frequently Asked Questions,Tap Them to See the
+        Answer.
+      </h1>
+      <div class="question-card" onclick="toggleOptions('branch')">
+        <h2>
+          Q1 : Which are the Top Three colleges for the following branch ?
+        </h2>
+      </div>
+      <div id="branch-options" class="options">
+        <input type="radio" name="branch-options" value="CSE" id="CSE-option" />
+        <label for="CSE-option">Computer Science and Technology</label><br />
+        <input type="radio" name="branch-options" value="AI" id="AI-option" />
+        <label for="AI-option">Artificial Intelligence</label><br />
+        <input type="radio" name="branch-options" value="MNC" id="MNC-option" />
+        <label for="MNC-option">Mathematics and Computing</label><br />
+        <input type="radio" name="branch-options" value="EE" id="EE-option" />
+        <label for="EE-option">Electrical</label><br />
+        <input type="radio" name="branch-options" value="ME" id="ME-option" />
+        <label for="ME-option">Mechanical</label><br />
+        <input type="radio" name="branch-options" value="CE" id="CE-option" />
+        <label for="CE-option">Chemical</label><br />
+        <input type="radio" name="branch-options" value="CB" id="CB-option" />
+        <label for="CB-option">Civil</label><br />
+        <input type="radio" name="branch-options" value="MM" id="MM-option" />
+        <label for="MM-option">Metallurgy</label><br />
+        <input type="radio" name="branch-options" value="MI" id="MI-option" />
+        <label for="MI-option">Mining</label><br />
+
+        <button onclick="showAnswer('branch')">Submit</button>
+      </div>
+
+      <div class="answer" id="branch-CSE-answer">
+        <p>
+          Indian Institute Of technology Bombai<br />
+          Indian Institute Of technology Delhi<br />
+          Indian Institute Of technology Kanpur<br />
+        </p>
+      </div>
+
+      <div class="answer" id="branch-AI-answer">
+        <p>
+          Indian Institute Of technology Bombai<br />
+          Indian Institute Of technology Madras<br />
+          Indian Institute Of technology Delhi<br />
+        </p>
+      </div>
+
+      <div class="answer" id="branch-MNC-answer">
+        <p>
+          Indian Institute Of technology Delhi<br />
+          Indian Institute Of technology Kanpur<br />
+          Indian Institute Of technology Madras<br />
+        </p>
+      </div>
+
+      <div class="answer" id="branch-EE-answer">
+        <p>
+          Indian Institute Of technology Bombai<br />
+          Indian Institute Of technology Delhi<br />
+          Indian Institute Of technology Madras<br />
+        </p>
+      </div>
+
+      <div class="answer" id="branch-ME-answer">
+        <p>
+          Indian Institute Of technology Bombai<br />
+          Indian Institute Of technology Delhi<br />
+          Indian Institute Of technology Kanpur<br />
+        </p>
+      </div>
+
+      <div class="answer" id="branch-CE-answer">
+        <p>
+          Indian Institute Of technology Bombai<br />
+          Indian Institute Of technology Delhi<br />
+          Indian Institute Of technology Kanpur<br />
+        </p>
+      </div>
+
+      <div class="answer" id="branch-CB-answer">
+        <p>
+          Indian Institute Of technology Bombai<br />
+          Indian Institute Of technology Kharagpur<br />
+          Indian Institute Of technology Madras<br />
+        </p>
+      </div>
+
+      <div class="answer" id="branch-MM-answer">
+        <p>
+          Indian Institute Of technology Bombai<br />
+          Indian Institute Of technology Kharagpur<br />
+          Indian Institute Of technology Madras<br />
+        </p>
+      </div>
+
+      <div class="answer" id="branch-MI-answer">
+        <p>
+          Indian Institute Of technology Dhanbad<br />
+          Indian Institute Of technology Kharagpur<br />
+          Indian Institute Of technology Varanasi<br />
+        </p>
+      </div>
+
+      <div class="question-card" onclick="toggleAnswer('answer2')">
+        <h2>
+          Q2: How Can I check The Opening And Closing Rank of different IIT's ?
+        </h2>
+      </div>
+
+      <div class="answer" id="answer2">
+        <p>
+          Just Click on The Link below To Go To the opening and closing rank
+          site
+        </p>
+        <a href="harsh.html" target="_blank">click</a>
+      </div>
+
+      <div class="question-card" onclick="toggleAnswer('answer3')">
+        <h2>
+          Q3: Which are the top three colleges according to Nirf Ranking ?
+        </h2>
+      </div>
+
+      <div class="answer" id="answer3">
+        <p>Indian Institute of Technology (IIT) Madras</p>
+        <p>Indian Institute of Science (IISc) Bangalore</p>
+        <p>Indian Institute of Technology (IIT) Bombay</p>
+      </div>
+
+      <div class="question-card" onclick="toggleAnswer('answer5')">
+        <h2>
+          Q4 :What is the flow of students among the IIT's over the years ?
+        </h2>
+      </div>
+
+      <div class="answer" id="answer5">
+        <p>
+          Students prefer colleges mostly based on the <b>NIRF</b> ranking ,
+          hence these are the top 5 IIT's where students usually prefer to go .
+        </p>
+        <p>Indian Institute of Technology Bombay</p>
+        <p>Indian Institute of Technology Delhi</p>
+        <p>Indian Institute of Technology Madras</p>
+        <p>Indian Institute of Technology Kanpur</p>
+        <p>Indian Institute of Technology Kharagpur</p>
+      </div>
+
+      <div class="question-card" onclick="toggleAnswer('answer1')">
+        <h2>Q5: Which are the top trending circuital-branches in colleges ?</h2>
+      </div>
+
+      <div class="answer" id="answer1">
+        <p>Computer Science And Technology</p>
+        <p>Artificial Intelligence</p>
+        <p>Mathematics And Computing</p>
+      </div>
+
+      <div class="question-card" onclick="toggleAnswer('answer4')">
+        <h2>
+          Q6: Which are the top trending non-circuital-branches in colleges ?
+        </h2>
+      </div>
+
+      <div class="answer" id="answer4">
+        <p>Mechanical Engineering</p>
+        <p>Aerospace Engineering</p>
+        <p>Civil Engineering</p>
+      </div>
+
+      <div class="question-card" onclick="toggleAnswer('answer6')">
+        <h2>
+          Q7: What is The future of circuital branches of IIT's in India ?
+        </h2>
+      </div>
+
+      <div class="answer" id="answer6">
+        <p>
+          <b
+            >The future of circuital branches of IITs in India is promising due
+            to the following</b
+          >
+          :
+        </p>
+        <p>Industry Demand and Job Opportunities</p>
+        <p>Technological Advancements</p>
+        <p>Research and Innovation</p>
+      </div>
+
+      <div class="question-card" onclick="toggleAnswer('answer7')">
+        <h2>
+          Q8: What is The future of non-circuital branches of IIT's in India ?
+        </h2>
+      </div>
+
+      <div class="answer" id="answer7">
+        <p>
+          <b
+            >The future of non-circuital(core) branches of IITs in India is
+            promising due to the following</b
+          >
+          :
+        </p>
+        <p>Infrastructure Development</p>
+        <p>Manufacturing and Industry</p>
+        <p>Healthcare and Biotechnology</p>
+        <p>Sustainable Development</p>
+      </div>
+
+      <div class="question-card" onclick="toggleAnswer('answer8')">
+        <h2>
+          Q9: Who are the top 3 colleges which have the most successful
+          startup's?
+        </h2>
+      </div>
+
+      <div class="answer" id="answer8">
+        <p>
+          <b
+            >The top 3 colleges along with some of their starup's are as
+            follows:</b
+          >
+          :
+        </p>
+        <p><b>IIT Bombay</b></p>
+        <ul>
+          <li>Flipkart</li>
+          <li>Ola</li>
+          <li>Groww</li>
+        </ul>
+
+        <p><b>IIT Delhi</b></p>
+        <ul>
+          <li>Zomato</li>
+          <li>Snapdeal</li>
+          <li>PolicyBazaar</li>
+        </ul>
+
+        <p><b>IIT Madras</b></p>
+        <ul>
+          <li>Swiggy</li>
+          <li>Rubrik</li>
+          <li>Upwork</li>
+        </ul>
+      </div>
+
+      <div class="question-card" onclick="toggleAnswer('answer9')">
+        <h2>
+          Q10 : Who are the top 3 colleges whose students qualify in civil
+          services examination ?
+        </h2>
+      </div>
+
+      <div class="answer" id="answer9">
+        <p>Indian Institute of Technology Delhi</p>
+        <p>Indian Institute of Technology Bombay</p>
+        <p>Indian Institute of Technology Kanpur</p>
+      </div>
+    </div>
+    <script>
+      function toggleAnswer(id) {
+        var answer = document.getElementById(id);
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+        } else {
+          answer.style.display = "none";
+        }
+      }
+
+      function toggleOptions(questionId) {
+        var options = document.getElementById(questionId + "-options");
+        options.style.display =
+          options.style.display === "none" || options.style.display === ""
+            ? "block"
+            : "none";
+        let answer = document.getElementsByClassName("answer");
+        console.log(answer);
+      }
+
+      function showAnswer(questionId) {
+        var selectedOption = document.querySelector(
+          'input[name="' + questionId + '-options"]:checked'
+        ).value;
+        var answer = document.getElementById(
+          questionId + "-" + selectedOption + "-answer"
+        );
+        answer.style.display = "block";
+        hidePreviousAnswers(questionId, selectedOption);
+      }
+
+      function hidePreviousAnswers(questionId, selectedOption) {
+        var answers = document.getElementsByClassName("answer");
+        for (var i = 0; i < answers.length; i++) {
+          var answerId = answers[i].id;
+          if (
+            answerId.startsWith(questionId + "-") &&
+            !answerId.endsWith("-" + selectedOption + "-answer")
+          ) {
+            answers[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
